@@ -26,8 +26,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="model.joblib" />
     <Content Include="requirements.txt" />
+    <Content Include="model.joblib" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include=".venv\Scripts\">
