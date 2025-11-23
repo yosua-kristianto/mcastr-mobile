@@ -6,15 +6,15 @@ if __name__ == "__main__":
 
     model = joblib.load("model.joblib")
 
-    print("n_features_in =", model.n_features_in_)
+    # print("n_features_in =", model.n_features_in_)
     # print("Number of support vectors =", len(model.support_))
 
     # If you only saved SVC(model), wrap manually:
     # model = Pipeline([("svc", model)])
 
-    n_features = model.n_features_in_
+    # n_features = model.n_features_in_
 
-    initial_type = [("input", FloatTensorType([None, n_features]))]
+    initial_type = [("input", FloatTensorType([None, 1]))]
 
     onnx_model = convert_sklearn(model, initial_types=initial_type)
 

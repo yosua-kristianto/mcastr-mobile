@@ -11,7 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>Joblib Onnx Converter</Name>
     <RootNamespace>Joblib Onnx Converter</RootNamespace>
-    <InterpreterId>MSBuild|Scripts|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>Global|VisualStudio|Venv TP348L</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|onnx-manager" />
+    <InterpreterReference Include="Global|VisualStudio|Venv TP348L" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
