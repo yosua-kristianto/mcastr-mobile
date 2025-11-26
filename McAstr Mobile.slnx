@@ -2,5 +2,8 @@
   <Project Path="Joblib Onnx Converter/Joblib Onnx Converter.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="3acac6de-bd96-4371-a3f2-0ef9836bd3ae">
     <Build Project="false" />
   </Project>
+  <Project Path="Mobile BERT/Mobile BERT.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="60795c07-14c7-4391-9f81-03521e2b414d">
+    <Build Project="false" />
+  </Project>
   <Project Path="OnnxLoader/OnnxLoader.csproj" />
 </Solution>
