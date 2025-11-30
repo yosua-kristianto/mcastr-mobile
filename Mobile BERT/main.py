@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 def main():
     load_dotenv()
 
+    from model.mobile_bert import MobileBERT
+    MobileBERT().train()
 
     return 0
 

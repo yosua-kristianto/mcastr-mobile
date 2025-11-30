@@ -5,6 +5,8 @@ from tensorflow.python.keras.layers import Input, Dropout, Dense
 from tensorflow.python.keras import Model
 from tensorflow.python.keras.callbacks import EarlyStopping
 
+from facades.log import Log
+
 class MobileBERT:
 
     def __init__(self):
@@ -20,6 +22,7 @@ class MobileBERT:
         # Fully Connected
         self.dropout = Dropout(0.1)
         self.output = Dense(1, activation='sigmoid', name='output')
+        Log.info(f"Initialized {self.model_name} model")
 
     # Early stopping after loss are not improved for some epochs
     def _callback_early_stopping(self):
@@ -50,4 +53,7 @@ class MobileBERT:
             loss = tensorflow.keras.losses.BinaryCrossentropy(),
             metrics = [tensorflow.keras.metrics.BinaryAccuracy(name='accuracy')]
         )
+
+        Log.info(f"Compiled {self.model_name} model")
+
         return model
